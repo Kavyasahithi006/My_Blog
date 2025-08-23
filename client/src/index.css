@@ -1,0 +1,95 @@
+
+:root {
+  /* Replace these with your chosen ColorHunt palette */
+  --color-1: #ff6b6b; /* Example color */
+  --color-2: #4ecdc4; /* Example color */
+  --color-3: #1a535c; /* Example color */
+  --color-4: #f7fff7; /* Example color */
+  
+  /* Map these to Bootstrap's color variables */
+  --bs-primary: var(--color-1);
+  --bs-secondary: var(--color-2);
+  --bs-success: var(--color-3);
+  --bs-info: var(--color-4);
+  /* Add more Bootstrap color mappings as needed */
+}
+/* Button overrides */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+}
+
+/* Text color overrides */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+/* Background color overrides */
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+/* Continue with other Bootstrap classes you're using */
+body{
+  background-color: var(--white-smoke);
+}
+.header{
+  margin-bottom:50px;
+  background-image:linear-gradient(to bottom,#a5aba5,#bcb7b8);
+}
+.header-links{
+  width:250px;
+ 
+}
+.header a{
+  text-decoration:none;
+  color:white;
+}
+.home-container {
+  background: url('/path-to-your-image.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+}
+.hover-effect {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+  color: #b5a8d5 !important; /* Soft pastel purple (from your color palette) */
+  opacity: 0.8;
+}
+
